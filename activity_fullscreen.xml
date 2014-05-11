@@ -1,0 +1,250 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:background="#333333"
+        android:orientation="horizontal" >
+        
+   		 <LinearLayout android:layout_width="wrap_content" 
+   		     android:id="@+id/Calendar_Bars"
+        	android:layout_height="wrap_content" 
+			android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cal_1"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:background="@drawable/calendar_bar"
+            
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+           
+             />
+
+        <TextView
+            android:id="@+id/tv_cal_2"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:text="28"
+            android:textColor="#d9dcd9"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+             android:background="@drawable/calendar_bar_reg" />
+
+        <TextView
+            android:id="@+id/tv_cal_3"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:text="27"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+             android:background="@drawable/calendar_bar_reg"
+             android:textColor="#b4b5b4"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_cal_4"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:text="26"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+             android:background="@drawable/calendar_bar_reg"
+             android:textColor="#b4b5b4"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_cal_5"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:text="25"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+             android:background="@drawable/calendar_bar_reg"
+             android:textColor="#b4b5b4"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        
+    	</LinearLayout>
+    	
+   		 <LinearLayout 
+   		     android:id="@+id/Calandar_View"
+   		     android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+			android:orientation="vertical">
+   		     
+   		     <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30sp"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingLeft="30sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:textColor="#ffffff" />
+
+        <AnalogClock
+            android:id="@+id/analogClock"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content" />
+        
+   		 </LinearLayout>
+
+   		
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20.22"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/city_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="28dp"
+            android:orientation="horizontal" >
+
+          
+
+            <TextView
+                android:id="@+id/tv_location_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:paddingTop="14sp"
+                android:text="Pune"
+                android:textColor="#747474"
+                android:drawableLeft="@drawable/locationplace" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_location_country"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:gravity="top"
+            android:paddingLeft="32sp"
+            android:text="INDIA"
+            android:textColor="#747474" />
+
+        <ImageView
+            android:contentDescription="Weather Type"
+            android:id="@+id/iv_weather_type"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            android:layout_gravity="center"           
+            />"
+
+
+    	</LinearLayout>
+
+    	<LinearLayout
+        	android:id="@+id/weather_bar"
+        	android:layout_width="fill_parent"
+       	 	android:layout_height="wrap_content"
+        	android:background="#ffffff"
+      	    android:orientation="horizontal" >
+
+        	<TextView
+           		 android:id="@+id/tv_wind_speed"
+           		 android:layout_width="wrap_content"
+           		 android:layout_height="wrap_content"
+          		
+           		 android:textColor="#747474" 
+           		 android:layout_weight="5" 
+           		 android:layout_gravity="center" 
+           		 android:gravity="center"/>
+
+        	<TextView
+            	android:id="@+id/tv_wind_type"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	
+            	android:textColor="#747474" 
+            	android:layout_weight="5"  
+            	android:layout_gravity="center"
+            	android:gravity="center"/>
+
+   	 	</LinearLayout>
+        
+    	<TextView 
+    	    	android:id="@+id/tv_humudity"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	
+            	android:textColor="#333333" 
+            	android:layout_weight="5"  
+            	android:layout_gravity="left"
+            	android:gravity="center" 
+            	android:paddingLeft="60sp"/>
+        		
+        <LinearLayout 
+            android:id="@+id/temperature_bar"
+            android:orientation="horizontal" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+     <!--            <TextView
+                android:id="@+id/tv_min_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               	android:textColor="#333333"
+               	android:textSize="50sp" 
+               	android:layout_weight="5"
+               	android:gravity="center"   />
+
+            <TextView
+                android:id="@+id/tv_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="min" 
+                android:textColor="#b4b5b4"/>
+
+            -->
+
+            <TextView
+                android:id="@+id/tv_max_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.43"
+                android:gravity="right"
+                android:paddingLeft="25sp"
+              
+                android:textColor="#333333"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/tv_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="bottom"
+                android:text="max"
+                android:textColor="#b4b5b4"
+                android:paddingLeft="15sp" />
+
+        </LinearLayout>
+
+</LinearLayout>
+
+
+
